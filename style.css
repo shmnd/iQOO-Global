@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color:white;
+}
+.iq{
+    width: 90px;
+    justify-content: center;
+    margin-left: 0px;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: black;  
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding:  0 100px;
+}
+.ham{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+    /* display: block; */
+}
+.nav-1{
+    display: flex;
+    /* align-items: center; */
+}
+
+.nav-bar{
+    display: flex;
+    /* align-items: start; */
+}
+
+
+.nav-bar ul li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 10px 35px;
+    /* transition: 0.2s; */
+    /* margin: 0 20px; */
+    /* margin-right: 10rem; */
+
+}
+.nav-bar ul li a:hover{
+    color: orangered;
+    
+}
+.nav-bar ul li a.active{
+    color: black;
+    background-color: #fefefe;
+}
+@media only screen and (max-width: 768px){
+
+#scnd-menu{
+    display: none;
+    margin-left: 500px;
+}
+.nav-bar ul li a{
+    font-size: 10px;
+}
+}
+@media only screen and (max-width: 768px){
+
+    .ham{
+        margin-right: 30px;
+        margin:0 px;
+    }
+    .iq{
+        margin-right: 50px;
+    }
+     .header{
+        align-items: start;
+        display: flex;
+        margin: 2rem;
+        justify-content: space-between;
+        padding: 0px;
+    }
+} 
+
+@media only screen and (max-width: 1320px){
+    .header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .header{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 900px){
+   .ham{
+        display: block;
+        cursor: pointer;
+        
+   }
+   .ham .line{
+        width: 30px;
+        height: 3px;
+        background:#fdfbfb;
+        margin: 6px 0;
+   }
+    .nav-bar{
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #11101b;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        height: 280px;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+    
+}
+@media only screen and (max-width:760px){
+
+    .text3{
+        display: none;
+    }
+}
+@media only screen and (min-width:758px){
+
+    .text3{
+        display: block;
+    }
+}
+
+.text4{
+    position: relative;
+    top: 246px;
+    background-color:white;
+    align-items: flex-end;
+}
+.width-img{
+
+    width: 101.4%;
+    height: 100%;
+
+}
+.position{
+    background-image: url("img/iqoo-midbanner-1-pc-x2.jpg");
+    background-size: cover;
+    width: auto;
+    height: 500px;
+}
+
+@media only screen and (min-width:760px){
+    /* .position{
+        width: auto;
+        height: 246px;
+    } */
+
+    .text4{
+        display: none;
+    }
+}
+@media only screen and (max-width:760px){
+    .position{
+        width: auto;
+        height: 246px;
+    }
+}
+.h1{
+    color: #11101b;
+    font-weight: lighter;
+}
+.btn1{
+    background-color:black;
+    color: #fbb209;
+    height: 30px;
+    width: 100px;
+    font-weight: lighter;
+    font-size: smaller;
+}
+.yell{
+    color: #fbb209; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.position{
+    
+    top: 90px;
+    left: 90px;
+}
+.text3{
+    /* width: 150; */
+    position: relative;
+    top: 250px;
+    margin-left: 200px;
+}
+.last{
+    background-color:#fdfbfb;
+    padding-top: 104px;
+    /* width: 400px; */
+    overflow: hidden;
+    height: 250px;
+}
+.last li{
+    color: #999;
+}
+footer{
+    width: 100%;
+    height: 55px;
+    padding: 22px;
+    background-color: #1a1a1a;
+    font-family: 'Urbanist', sans-serif;
+    font-size:smaller;
+    font-size: 2px;
+    color: #999;
+    text-align: center;
+}
+.ft{
+    font-size: 14px;
+}
